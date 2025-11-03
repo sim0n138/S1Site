@@ -46,10 +46,10 @@ export default function RegisterPage() {
       <Card className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-            Создайте аккаунт
+            Регистрация
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Начните свой путь к здоровью
+            FitZen
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export default function RegisterPage() {
           <Input
             type="text"
             label="Имя"
-            placeholder="Ваше имя"
+            placeholder="Имя"
             value={name}
             onChange={(e) => setName(e.target.value)}
             disabled={loading}
@@ -76,7 +76,7 @@ export default function RegisterPage() {
           <Input
             type="password"
             label="Пароль"
-            placeholder="минимум 8 символов"
+            placeholder="мин. 8 символов"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -94,7 +94,7 @@ export default function RegisterPage() {
             className="w-full"
             disabled={loading}
           >
-            {loading ? 'Регистрация...' : 'Зарегистрироваться'}
+            {loading ? 'Регистрация...' : 'Создать'}
           </Button>
         </form>
 

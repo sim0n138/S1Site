@@ -45,10 +45,10 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-            Добро пожаловать в FitZen
+            FitZen
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Войдите в свой аккаунт
+            Вход
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function LoginPage() {
         <div className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
           Нет аккаунта?{' '}
           <Link href="/register" className="text-primary-600 hover:text-primary-700 font-medium">
-            Зарегистрироваться
+            Регистрация
           </Link>
         </div>
       </Card>

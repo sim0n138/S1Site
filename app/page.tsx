@@ -7,16 +7,16 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Добро пожаловать в <span className="text-primary-600">FitZen</span>
+            <span className="text-primary-600">FitZen</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
-            Комплексное веб-приложение для физического и ментального здоровья
+            Тренировки, растяжка, медитация
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
             <Link href="/register">
               <Button size="lg" className="w-full sm:w-auto">
-                Начать бесплатно
+                Начать
               </Button>
             </Link>
             <Link href="/login">
@@ -33,7 +33,7 @@ export default function Home() {
                 Тренировки
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Силовые, кардио, HIIT и функциональные тренировки для любого уровня
+                Силовые, кардио, HIIT
               </p>
             </div>
 
@@ -43,7 +43,7 @@ export default function Home() {
                 Растяжка
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Йога, стретчинг и восстановительные практики для гибкости
+                Йога, стретчинг
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function Home() {
                 Медитация
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Практики осознанности и релаксации для ментального здоровья
+                Релаксация, дыхание
               </p>
             </div>
           </div>

@@ -66,13 +66,13 @@ export default function ProgressPage() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-            Дневник Прогресса
+            Прогресс
           </h1>
 
           {/* Add Entry Form */}
           <Card className="mb-8">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-              Добавить запись
+              Новая запись
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
@@ -92,7 +92,7 @@ export default function ProgressPage() {
                 <textarea
                   className="w-full px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
                   rows={3}
-                  placeholder="Как вы себя чувствуете?"
+                  placeholder="Заметки"
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   disabled={submitting}
@@ -100,7 +100,7 @@ export default function ProgressPage() {
               </div>
 
               <Button type="submit" disabled={submitting || (!weight && !notes)}>
-                {submitting ? 'Сохранение...' : 'Сохранить'}
+                {submitting ? 'Сохранение...' : 'Добавить'}
               </Button>
             </form>
           </Card>
@@ -117,7 +117,7 @@ export default function ProgressPage() {
               </div>
             ) : progress.length === 0 ? (
               <p className="text-gray-600 dark:text-gray-400 text-center py-8">
-                У вас пока нет записей. Добавьте первую запись выше!
+                Нет записей
               </p>
             ) : (
               <div className="space-y-4">

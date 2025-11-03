@@ -62,14 +62,14 @@ export default function DashboardPage() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-            Дашборд
+            Dashboard
           </h1>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <Card>
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                Всего активностей
+                Активностей
               </div>
               <div className="text-3xl font-bold text-gray-900 dark:text-white">
                 {stats?.totalActivities || 0}
@@ -78,7 +78,7 @@ export default function DashboardPage() {
 
             <Card>
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                Всего минут
+                Минут
               </div>
               <div className="text-3xl font-bold text-gray-900 dark:text-white">
                 {stats?.totalMinutes || 0}
@@ -87,7 +87,7 @@ export default function DashboardPage() {
 
             <Card>
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                Текущая серия
+                Серия
               </div>
               <div className="text-3xl font-bold text-primary-600">
                 {stats?.currentStreak || 0} 🔥
@@ -96,7 +96,7 @@ export default function DashboardPage() {
 
             <Card>
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                По типам
+                Типы
               </div>
               <div className="flex gap-2 flex-wrap">
                 <Badge variant="success">💪 {stats?.workoutCount || 0}</Badge>
@@ -115,7 +115,7 @@ export default function DashboardPage() {
                   Тренировки
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Начать тренировку
+                  Начать
                 </p>
               </Card>
             </Link>
@@ -127,7 +127,7 @@ export default function DashboardPage() {
                   Растяжка
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Сделать растяжку
+                  Начать
                 </p>
               </Card>
             </Link>
@@ -139,7 +139,7 @@ export default function DashboardPage() {
                   Медитация
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Помедитировать
+                  Начать
                 </p>
               </Card>
             </Link>
@@ -148,12 +148,12 @@ export default function DashboardPage() {
           {/* Recent Activities */}
           <Card>
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-              Последние активности
+              Активности
             </h2>
 
             {activities.length === 0 ? (
               <p className="text-gray-600 dark:text-gray-400 text-center py-8">
-                У вас пока нет записанных активностей. Начните тренировку!
+                Нет активностей
               </p>
             ) : (
               <div className="space-y-3">

@@ -58,7 +58,7 @@ export default function WorkoutsPage() {
               onChange={(e) => setFilter({ ...filter, type: e.target.value })}
               className="px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white"
             >
-              <option value="">Все типы</option>
+              <option value="">Все</option>
               <option value="strength">Силовые</option>
               <option value="cardio">Кардио</option>
               <option value="hiit">HIIT</option>
@@ -70,7 +70,7 @@ export default function WorkoutsPage() {
               onChange={(e) => setFilter({ ...filter, level: e.target.value })}
               className="px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white"
             >
-              <option value="">Все уровни</option>
+              <option value="">Все</option>
               <option value="beginner">Начинающий</option>
               <option value="intermediate">Средний</option>
               <option value="advanced">Продвинутый</option>
